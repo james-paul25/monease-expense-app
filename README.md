@@ -28,6 +28,10 @@
 |-------------|----------------|
 | ![Report Screen](screenshots/graph.jpg) | ![Profile Screen](screenshots/profile_activity.jpg) |
 
-|Debt Screen|
-|-------------|
+|Debt Screen|              |
+|-------------|-------------|
 | ![Debt Screen](screenshots/debt.jpg) |
+
+### Download the APK
+[Click here to download the app](https://github.com/james-paul25/monease-expense-app/tree/main/apk/monease.apk)
+
