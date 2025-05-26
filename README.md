@@ -22,7 +22,7 @@
 
 | Transaction Screen | Add Transaction Screen |
 |-------------|----------------|
-|![Transaction Screen](screenshots/transaction.jpg) | ![Add Transaction Screen](screenshots/transaction.jpg) |
+|![Transaction Screen](screenshots/transaction.jpg) | ![Add Transaction Screen](screenshots/add.jpg) |
 
 | Report | Profile Screen |
 |-------------|----------------|
