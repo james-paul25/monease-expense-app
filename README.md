@@ -8,6 +8,13 @@
 - Can view transaction with graph and text
 - Can export data
 
+## Tech Stack
+
+![Android](https://img.shields.io/badge/Android-Java%20%7C%20XML-3DDC84?style=for-the-badge&logo=android)
+![Firebase](https://img.shields.io/badge/Firebase-Backend-yellow?style=for-the-badge&logo=firebase)
+![Google Sign-In](https://img.shields.io/badge/Auth-Google%20Sign--In-blue?style=for-the-badge&logo=google)
+
+
 ##  UI Screenshots
 
 ### Login Screen
