@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/deptorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dosis_bold"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/debtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱0.00"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
+        android:fontFamily="@font/dosis_bold" />
+    <TextView
+        android:id="@+id/debtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:fontFamily="@font/dosis_medium"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="January 25, 2026"
+        android:textSize="14sp"
+        android:fontFamily="@font/dosis_regular"
+        android:textColor="@color/gray"
+        android:layout_marginTop="4dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="0dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/debtStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Not Paid"
+            android:textSize="14sp"
+            android:fontFamily="@font/dosis_semibold"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/btnMarkAsPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark as Paid"
+            android:textSize="12sp"
+            android:fontFamily="@font/dosis_semibold"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

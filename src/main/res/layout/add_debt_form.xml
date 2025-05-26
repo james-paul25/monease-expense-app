@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Dept"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/dosis_extrabold"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etDebtorName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Debtor Name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/dosis_medium"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <EditText
+        android:id="@+id/etDebtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:fontFamily="@font/dosis_medium"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <EditText
+        android:id="@+id/etDebtDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Due Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:fontFamily="@font/dosis_medium"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+
+    <EditText
+        android:id="@+id/etDebtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Description"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:fontFamily="@font/dosis_medium"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btnSaveDebt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Debt"
+        android:fontFamily="@font/dosis_semibold"
+        android:textSize="18sp"
+        android:padding="12dp" />
+
+</LinearLayout>

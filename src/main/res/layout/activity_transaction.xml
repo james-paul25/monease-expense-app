@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/rounded_bottom"
+        >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Back to previous screen"
+            android:drawableLeft="@drawable/arrow"
+            android:padding="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_transaction_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/dosis_extrabold"
+            android:gravity="center"
+            android:text="Transaction"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteMonthFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Select Month"
+            android:padding="10dp"
+            android:fontFamily="@font/dosis_semibold"
+            android:background="@android:drawable/edit_text"
+            android:drawableEnd="@android:drawable/ic_menu_more"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/btn_clear_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/dosis_bold"
+            android:layout_marginLeft="10px"
+            android:text="Clear"
+            android:background="@drawable/rounded_blue"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Month Filter Dropdown -->
+
+
+    <!-- RecyclerView for Transactions -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_transaction_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_addTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:contentDescription="Add Transaction"
+            app:srcCompat="@drawable/add" />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

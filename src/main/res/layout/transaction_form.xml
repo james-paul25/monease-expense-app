@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Transaction"
+        android:fontFamily="@font/dosis_extrabold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/dosis_regular"
+        android:layout_height="60dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteCategory"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Category"
+        android:fontFamily="@font/dosis_regular"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:dropDownHeight="200dp"
+        android:dropDownVerticalOffset="5dp"
+        android:dropDownWidth="match_parent"
+        android:background="@android:drawable/editbox_background"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteType"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Type(Expense/Income)"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:fontFamily="@font/dosis_regular"
+        android:padding="12dp"
+        android:dropDownHeight="200dp"
+        android:dropDownVerticalOffset="5dp"
+        android:dropDownWidth="match_parent"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:id="@+id/etdescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Description"
+        android:fontFamily="@font/dosis_regular"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <Button
+        android:id="@+id/btnSaveTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Transaction"
+        android:fontFamily="@font/dosis_semibold"
+        android:textSize="18sp"
+        android:padding="12dp"/>
+
+</LinearLayout>
